@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 from mytask import views
+# from mytask.views import CategoriesListView, ItemsByCategoryView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", views.index, name='index'),
+    # path("", CategoriesListView.as_view(), name='category-list'),
+    # path('<str:slug>/', ItemsByCategoryView.as_view(), name='post-by-category'),
 ]
