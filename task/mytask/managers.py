@@ -10,4 +10,4 @@ class CategoryManager(models.Manager):
 class SubCategoryManager(models.Manager):
 
     def get_queryset(self):
-        return super().get_queryset().exclude( parent=None)
+        return super().get_queryset().exclude(parent=None)
